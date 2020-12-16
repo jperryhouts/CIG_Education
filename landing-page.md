@@ -5,7 +5,7 @@ Some intro text
 ## My book section
 
 ```{note}
-Here's a note!
+Testing Github Actions
 ```
 
-That's it!
+This book should be automatically re-generated after `git push`.
