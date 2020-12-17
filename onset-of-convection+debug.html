@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview &#8212; CIG Educational Resources</title>
+    
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/cig_logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">CIG Educational Resources</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="landing-page.html">
+   My book title
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="page1.html">
+   Tutorial Notebooks
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/onset-of-convection+debug.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/onset-of-convection+debug.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notes">
+   Notes
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
+<p>Here we use ASPECT to numerically reproduce the results of a linear stability analysis for the onset of convection in a fluid layer heated from below. This exercise was assigned to students in a geodynamics class at Portland State University as a first step towards setting up a nominally Earth-like mantle convection model. Hence, representative length scales and transport properties for Earth are used.</p>
+<p>The linear stability analysis appears in Turcotte and Schubert (2014) section 6.19. To use this code, you must compile aspect and give the path to the executable below as <span class="math notranslate nohighlight">\(\texttt{aspect_bin}\)</span>. The critical Rayleigh number for the onset of convection depends only on the dimensionless wavelength of the perturbation, which is assumed to be equal to width of the domain. The domain has height <span class="math notranslate nohighlight">\(b\)</span> and width <span class="math notranslate nohighlight">\(\lambda\)</span> and the perturbation has the functional form:</p>
+<p><span class="math notranslate nohighlight">\(
+T'(x,y) = T_0'\cos\left(\frac{2\pi x}{\lambda}\right)\sin\left(\frac{\pi y}{b} \right)
+\)</span></p>
+<p>Note that because we place the bottom boundary of the domain at <span class="math notranslate nohighlight">\(y=0\)</span> and the top at <span class="math notranslate nohighlight">\(y=b\)</span>, the perturbation vanishes at the top and bottom boundaries.</p>
+<p>The analytic solution for the critical Rayleigh number, <span class="math notranslate nohighlight">\(Ra_{cr}\)</span> is given in T&amp;S equation 6.319:</p>
+<p><span class="math notranslate nohighlight">\(
+Ra_{cr}=\frac{\left(\pi^2+\frac{4\pi^2 b^2}{\lambda^2}\right)^3}{\frac{4\pi^2 b^2}{\lambda^2}}
+\)</span></p>
+<p>The linear stability analysis also makes a prediction for the dimensionless growth rate of the instability <span class="math notranslate nohighlight">\(\alpha'\)</span>. The maximum vertical velocity is given by:</p>
+<p><span class="math notranslate nohighlight">\(
+v_{y,max} = \frac{2\pi}{\lambda}\phi_0' e^{\alpha' t}
+\)</span>,</p>
+<p>where</p>
+<p><span class="math notranslate nohighlight">\(
+\phi_0' = -\frac{2\pi}{\lambda}\frac{\rho_0 g \alpha T_0'}{\mu}\left(\frac{4\pi^2}{\lambda^2}+\frac{\pi^2}{b^2} \right)^{-2}
+\)</span>,</p>
+<p>and</p>
+<p><span class="math notranslate nohighlight">\(
+\alpha'=\frac{\kappa}{b^2}\left[\frac{\rho_0 g \alpha b^3 \Delta T}{\mu \kappa}\left(\frac{\frac{4\pi^2 b^2}{\lambda^2}}{\left(\frac{4\pi^2 b^2}{\lambda^2}+\pi^2\right)^2}\right) -\left(\pi^2+\frac{4\pi^2b^2}{\lambda^2}\right)\right]
+\)</span>.</p>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<p>This notebook executes slowly in the CIG sandbox and may perform better locally.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">run</span>
+<span class="kn">import</span> <span class="nn">os</span>       <span class="c1">#import to recognize sh commands</span>
+
+<span class="n">base_input</span> <span class="o">=</span> <span class="s2">&quot;convection-box-base.prm&quot;</span>     <span class="c1"># The &#39;base&#39; input file that gets modified</span>
+<span class="n">input_file</span> <span class="o">=</span> <span class="s2">&quot;input.prm&quot;</span>                   <span class="c1"># The temporary input file that is used for each run</span>
+<span class="c1">#aspect_bin = &quot;../../build/aspect&quot;          # Path to aspect executable</span>
+<span class="n">output_dir</span> <span class="o">=</span> <span class="s2">&quot;output&quot;</span>                      <span class="c1"># Output directory</span>
+
+<span class="c1">#for CIG sandbox</span>
+<span class="n">aspect_bin</span> <span class="o">=</span> <span class="s2">&quot;../aspect/aspect&quot;</span>            <span class="c1"># Path to aspect executable for sandbox</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;onset-of-convection&#39;</span><span class="p">)</span>            <span class="c1"># folder for .prm file and outputs</span>
+<span class="o">!</span>ls                                        #list directory contents
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a dictionary to replace keys in base input file with appropriate values</span>
+<span class="n">parameters</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">([])</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;PMAG&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>                <span class="c1"># amplitude of temperature perturbation</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0e6</span>          <span class="c1"># layer thickness</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;IREF&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>              <span class="c1"># initial global refinement</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;DELTA_T&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2500.0</span>        <span class="c1"># temperature difference between bottom, top boundaries</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;GRAVITY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.0</span>          <span class="c1"># vertical gravitaitonal acceleration</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;KTHERMAL&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">4.0</span>          <span class="c1"># thermal conductivity</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;ALPHA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3e-5</span>            <span class="c1"># thermal expansivity</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;DENSITY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">4000.0</span>        <span class="c1"># reference density</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;SPECIFIC_HEAT&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1250.0</span>  <span class="c1"># specific heat capacity</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;NY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>                <span class="c1"># number of x-repetitions</span>
+
+<span class="k">def</span> <span class="nf">generate_input_file</span><span class="p">(</span><span class="n">base_file_name</span><span class="p">,</span><span class="n">output_file_name</span><span class="p">,</span><span class="n">dictionary</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read the &#39;base&#39; input file from base_file_name, replace strings </span>
+<span class="sd">    using dictionary, and write new output file to output_file_name&quot;&quot;&quot;</span>
+    <span class="n">fh</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">base_file_name</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+    <span class="n">run</span><span class="p">([</span><span class="s1">&#39;rm&#39;</span><span class="p">,</span><span class="s1">&#39;-f&#39;</span><span class="p">,</span><span class="n">output_file_name</span><span class="p">])</span>
+    <span class="n">ofh</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_file_name</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fh</span><span class="p">:</span>        
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">dictionary</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>                
+                <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">dictionary</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+        <span class="n">ofh</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="n">fh</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">ofh</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+<span class="k">def</span> <span class="nf">parse_output</span><span class="p">(</span><span class="n">output_dir</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Read the statistics (stats_file) file from the output directory&quot;&quot;&quot;</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">output_dir</span> <span class="o">+</span> <span class="s1">&#39;/statistics&#39;</span><span class="p">,</span><span class="n">usecols</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+    <span class="n">vy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">output_dir</span> <span class="o">+</span> <span class="s1">&#39;/point_values.txt&#39;</span><span class="p">,</span><span class="n">usecols</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,))</span>
+    <span class="n">t</span><span class="o">=</span><span class="n">tmp</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">vmax</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span><span class="n">vmax</span><span class="p">,</span><span class="n">vy</span>
+    
+<span class="k">def</span> <span class="nf">vy_exact</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">p</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Evaluate exact expression for maximum upward velocity&quot;&quot;&quot;</span>
+    <span class="n">lam</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">]</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;GRAVITY&#39;</span><span class="p">]</span>
+    <span class="n">T0</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;PMAG&#39;</span><span class="p">]</span>
+    <span class="n">alpha</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;ALPHA&#39;</span><span class="p">]</span>
+    <span class="n">eta</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;VISCOSITY&#39;</span><span class="p">]</span>
+    <span class="n">rho</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;DENSITY&#39;</span><span class="p">]</span>
+    <span class="n">dT</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;DELTA_T&#39;</span><span class="p">]</span>
+    <span class="n">kappa</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;KTHERMAL&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">rho</span><span class="o">/</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;SPECIFIC_HEAT&#39;</span><span class="p">]</span>
+    <span class="n">alpha_prime</span> <span class="o">=</span> <span class="n">kappa</span><span class="o">/</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">((</span><span class="n">rho</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">alpha</span><span class="o">*</span><span class="n">b</span><span class="o">**</span><span class="mi">3</span><span class="o">*</span><span class="n">dT</span><span class="o">/</span><span class="n">eta</span><span class="o">/</span><span class="n">kappa</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">lam</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mf">4.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">lam</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="mf">4.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">lam</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">phi0</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">lam</span><span class="o">*</span><span class="p">(</span><span class="n">rho</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">alpha</span><span class="o">*</span><span class="n">T0</span><span class="o">/</span><span class="n">eta</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">4.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">lam</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mf">2.0</span><span class="p">)</span>
+    <span class="n">vymax</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">lam</span><span class="o">*</span><span class="n">phi0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">alpha_prime</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vymax</span>
+    
+<span class="k">def</span> <span class="nf">run_aspect</span><span class="p">(</span><span class="n">rayleigh</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="n">parameters</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Perofm the following tasks. </span>
+<span class="sd">    1. Choose viscosity to satisfy rayleigh number rayleigh and parameters in p, which</span>
+<span class="sd">    defaults to the parameters dictionary defined in the current namespace. </span>
+<span class="sd">    2. Generate an input file. </span>
+<span class="sd">    3. Run aspect</span>
+<span class="sd">    4. Parse the results, return the rate at which velocities increase between the first and second timesteps.&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">eta</span><span class="p">(</span><span class="n">ra</span><span class="p">):</span>        
+        <span class="n">rho</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;DENSITY&#39;</span><span class="p">]</span>
+        <span class="n">alpha</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;ALPHA&#39;</span><span class="p">]</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;GRAVITY&#39;</span><span class="p">]</span>
+        <span class="n">dT</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;DELTA_T&#39;</span><span class="p">]</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span>     
+        <span class="n">kappa</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;KTHERMAL&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;DENSITY&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;SPECIFIC_HEAT&#39;</span><span class="p">]</span>    
+        <span class="k">return</span> <span class="n">rho</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">alpha</span><span class="o">*</span><span class="n">dT</span><span class="o">*</span><span class="p">(</span><span class="n">h</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="n">ra</span><span class="o">/</span><span class="n">kappa</span>                
+    
+    <span class="n">p</span><span class="p">[</span><span class="s1">&#39;VISCOSITY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">eta</span><span class="p">(</span><span class="n">rayleigh</span><span class="p">);</span>
+    <span class="c1"># Change the number of x-repeitions to keep elements close to equant</span>
+    <span class="n">p</span><span class="p">[</span><span class="s1">&#39;NX&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;NY&#39;</span><span class="p">])</span>
+    <span class="n">p</span><span class="p">[</span><span class="s1">&#39;EVALUATION_POINTS&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="nb">str</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">2.0</span><span class="p">)</span>
+    <span class="n">generate_input_file</span><span class="p">(</span><span class="n">base_input</span><span class="p">,</span><span class="n">input_file</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+    <span class="n">run</span><span class="p">([</span><span class="s1">&#39;rm&#39;</span><span class="p">,</span><span class="s1">&#39;-rf&#39;</span><span class="p">,</span><span class="n">output_dir</span><span class="p">])</span>
+    <span class="n">run</span><span class="p">([</span><span class="n">aspect_bin</span><span class="p">,</span><span class="n">input_file</span><span class="p">])</span>
+    <span class="n">t</span><span class="p">,</span> <span class="n">vmax</span><span class="p">,</span> <span class="n">vy</span> <span class="o">=</span> <span class="n">parse_output</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;finished run for ra=&#39;</span><span class="p">,</span><span class="n">rayleigh</span><span class="p">)</span>  <span class="c1"># for debug purposes to check aspect is runnng</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">vmax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">vmax</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">t</span><span class="p">,</span> <span class="n">vy</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Define a function to perform bisection:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bisection</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">Inf</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Performs bisection to find 0.0=function(x) using function and initial bounds (low, high) </span>
+<span class="sd">    to within absolute value tolerance atol OR relative tolerance rtol&quot;&quot;&quot;</span>
+    <span class="k">assert</span> <span class="n">function</span><span class="p">(</span><span class="n">low</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">0</span> 
+    <span class="k">assert</span> <span class="n">function</span><span class="p">(</span><span class="n">high</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span>
+    <span class="n">x_try</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="n">y_try</span> <span class="o">=</span> <span class="p">[];</span>
+    
+    <span class="k">while</span> <span class="nb">abs</span><span class="p">(</span><span class="n">low</span><span class="o">-</span><span class="n">high</span><span class="p">)</span><span class="o">&gt;</span><span class="n">atol</span> <span class="ow">or</span> <span class="nb">abs</span><span class="p">(</span><span class="n">low</span><span class="o">-</span><span class="n">high</span><span class="p">)</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">low</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">rtol</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">low</span> <span class="o">+</span> <span class="n">high</span><span class="p">)</span><span class="o">/</span><span class="mf">2.0</span>
+        <span class="n">x_try</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>       
+        <span class="n">y_try</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">high</span><span class="o">=</span><span class="n">x</span><span class="p">;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">low</span><span class="o">=</span><span class="n">x</span><span class="p">;</span>        
+    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">x_try</span><span class="p">,</span> <span class="n">y_try</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Define the range of aspect ratios for which <span class="math notranslate nohighlight">\(Ra_{cr}\)</span> is calculated. Iterate over them and perform bisection to determine <span class="math notranslate nohighlight">\(Ra_{cr}\)</span> for each.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aspect_min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">4.</span>
+<span class="n">aspect_max</span> <span class="o">=</span> <span class="mf">12.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+
+<span class="c1">#reduce number of aspect rations and tolerances to run on CIG sandbox. Execution of this cell may take awhile.</span>
+<span class="c1">#naspect = 10;</span>
+<span class="c1">#ra_rtol = 1e-5;</span>
+<span class="n">naspect</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">ra_rtol</span> <span class="o">=</span> <span class="mf">1e-3</span><span class="p">;</span>
+
+<span class="k">def</span> <span class="nf">racr_lsa</span><span class="p">(</span> <span class="n">b_over_lam</span> <span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Evaluates the critical Rayleigh number for b_over_lam, which is the ratio of box height </span>
+<span class="sd">    to box width. Implements Turcotte and Schubert (3ed) equation 6.319&quot;&quot;&quot;</span>
+    <span class="n">pi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+    <span class="n">racr</span> <span class="o">=</span> <span class="p">(</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">b_over_lam</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="o">/</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">b_over_lam</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">racr</span>
+
+<span class="n">aspect_ratio</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1.0</span><span class="o">/</span><span class="n">aspect_max</span><span class="p">,</span><span class="mf">1.0</span><span class="o">/</span><span class="n">aspect_min</span><span class="p">,</span><span class="n">naspect</span><span class="p">)</span>
+<span class="n">aspect_ratio</span> <span class="o">=</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">aspect_ratio</span>
+<span class="n">lams</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">ra_save</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">val_save</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">racr_save</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">xplot</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">aspect_ratio</span><span class="p">:</span>
+    <span class="c1"># calculate dimensional width</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span>
+    <span class="n">racr_analytic</span> <span class="o">=</span><span class="n">racr_lsa</span><span class="p">(</span> <span class="mf">1.0</span><span class="o">/</span><span class="n">a</span> <span class="p">)</span>
+    <span class="n">racr_low</span>  <span class="o">=</span> <span class="n">racr_analytic</span><span class="o">/</span><span class="mf">3.0</span>
+    <span class="n">racr_high</span> <span class="o">=</span> <span class="n">racr_analytic</span><span class="o">*</span><span class="mf">3.0</span>
+    <span class="n">racr</span><span class="p">,</span> <span class="n">ratry</span><span class="p">,</span> <span class="n">vals</span> <span class="o">=</span> <span class="n">bisection</span><span class="p">(</span><span class="n">run_aspect</span><span class="p">,</span><span class="n">racr_low</span><span class="p">,</span><span class="n">racr_high</span><span class="p">,</span><span class="n">rtol</span><span class="o">=</span><span class="n">ra_rtol</span><span class="p">)</span>
+    <span class="n">xplot</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">]</span> <span class="p">)</span>
+    <span class="n">ra_save</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ratry</span><span class="p">)</span>
+    <span class="n">racr_save</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">racr</span><span class="p">)</span>
+    <span class="n">val_save</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">run_aspect</span><span class="p">(</span><span class="n">racr_high</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">run_aspect</span><span class="p">(</span><span class="n">racr_low</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">symbol</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a string specifying figure glyph and color corresponding to value&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">value</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;ro&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;k.&#39;</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ra_save</span><span class="p">)):</span>
+    <span class="c1"># Plot the results</span>
+    <span class="n">ratry</span> <span class="o">=</span> <span class="n">ra_save</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+    <span class="n">dvdt</span> <span class="o">=</span> <span class="n">val_save</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ratry</span><span class="p">)):</span>
+        <span class="n">shape</span><span class="p">,</span> <span class="n">mycolor</span> <span class="o">=</span> <span class="n">symbol</span><span class="p">(</span><span class="n">ratry</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xplot</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">ratry</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">symbol</span><span class="p">(</span><span class="n">dvdt</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+
+<span class="c1"># Plot the analytic solution.</span>
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xplot</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">xplot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,[</span><span class="n">racr_lsa</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xp</span><span class="p">],</span><span class="s1">&#39;g:&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3000</span><span class="p">,</span><span class="s1">&#39;Unstable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="s1">&#39;Stable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$2\pi b/\lambda$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$Ra_</span><span class="si">{cr}</span><span class="s1">$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4500</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;racr.png&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Make a plot showing the relative error between numerical and analytic solutions</span>
+<span class="c1"># Recall that we should expect the level agreement to be limited by the relative error</span>
+<span class="c1"># tolerance defined during the bisection procedure.</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">racr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">racr_lsa</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xplot</span><span class="p">])</span>
+<span class="n">e_norm</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">racr_save</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">racr_lsa</span><span class="p">(</span><span class="n">xplot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">racr_lsa</span><span class="p">(</span><span class="n">xplot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">xplot</span><span class="p">))]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xplot</span><span class="p">,</span><span class="n">e_norm</span><span class="p">,</span><span class="s1">&#39;k.&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">],[</span><span class="n">ra_rtol</span><span class="p">,</span><span class="n">ra_rtol</span><span class="p">],</span><span class="s1">&#39;r--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$2\pi b/\lambda$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;relative error&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;racr_error.png&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># As an additional example, compare the analytic and numerically determined maximal velocities</span>
+<span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;WIDTH&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span><span class="o">*</span><span class="n">parameters</span><span class="p">[</span><span class="s1">&#39;HEIGHT&#39;</span><span class="p">];</span>
+<span class="n">ra_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span><span class="mi">1000</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">dvdt</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">vy0</span><span class="o">=</span><span class="p">[];</span>  <span class="c1">#Numerically determined vy at time 0</span>
+<span class="n">vy1</span><span class="o">=</span><span class="p">[];</span>  <span class="c1">#Numerically determined vy at time 1</span>
+<span class="n">vye0</span><span class="o">=</span><span class="p">[];</span> <span class="c1">#Exact vy at time 0</span>
+<span class="n">vye1</span><span class="o">=</span><span class="p">[];</span> <span class="c1">#Exact vy at time 1</span>
+<span class="k">for</span> <span class="n">ra</span> <span class="ow">in</span> <span class="n">ra_values</span><span class="p">:</span>    
+    <span class="n">tmp1</span><span class="p">,</span><span class="n">tmp2</span><span class="p">,</span><span class="n">tmp3</span> <span class="o">=</span> <span class="n">run_aspect</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span><span class="n">parameters</span><span class="p">)</span>
+    <span class="n">t0</span><span class="o">=</span><span class="n">tmp2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">t1</span><span class="o">=</span><span class="n">tmp2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">vye0</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">vy_exact</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span><span class="n">parameters</span><span class="p">)</span> <span class="p">)</span>
+    <span class="n">vye1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">vy_exact</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span><span class="n">parameters</span><span class="p">)</span> <span class="p">)</span>
+    <span class="n">dvdt</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp1</span><span class="p">)</span>
+    <span class="n">vy0</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp3</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">vy1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp3</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    
+<span class="n">err0</span> <span class="o">=</span> <span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">vy0</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">vye0</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">vye0</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vy0</span><span class="p">))]</span>
+<span class="n">err1</span> <span class="o">=</span> <span class="p">[</span><span class="nb">abs</span><span class="p">(</span><span class="n">vy1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">vye1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="nb">abs</span><span class="p">(</span><span class="n">vye1</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vy1</span><span class="p">))]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ra_values</span><span class="p">,</span><span class="n">err0</span><span class="p">,</span><span class="s1">&#39;rx&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Time 0&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ra_values</span><span class="p">,</span><span class="n">err1</span><span class="p">,</span><span class="s1">&#39;kx&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Time 1&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Relative Error&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Rayleigh Number&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
