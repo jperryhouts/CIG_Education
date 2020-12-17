@@ -1,3 +1,7 @@
 - file: landing-page
-- file: page1
-- file: onset-of-convection
+  numbered: true
+
+- part: Notebooks
+  chapters:
+  - file: page1
+  - file: onset-of-convection
